@@ -1,6 +1,7 @@
 //Time Complexity: O(N * log k))
 //Space Complexity: O(N * k)
 
+
 import java.util.*;
 
 class GroupAnagrams {
@@ -26,5 +27,11 @@ class GroupAnagrams {
         }
         return result;
 
+    }
+
+    public static void main(String[] args) {
+        String[] str = {"eat", "tea", "tan", "ate", "nat", "bat"};
+        GroupAnagrams groupAnagrams = new GroupAnagrams();
+        System.out.println(groupAnagrams.groupAnagrams(str));
     }
 }
